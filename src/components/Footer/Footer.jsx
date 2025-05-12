@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="row">
 
               {/* Countries Served */}
-              <div className="col-lg-4 col-md-6">
+              <div className="col-lg-3 col-md-6">
                 <div className="footer-widget">
                   <h3 className="footer-title">Countries Served</h3>
                   <ul className="footer-links">
@@ -91,15 +91,16 @@ const Footer = () => {
                   <ul className="footer-contact">
                     <li>
                       <FaMapMarkerAlt />
-                      <span>123 Immigration Street, Visa City, VC 12345</span>
+                      <span>Kiskinda Overseas Education,
+24 Ganapathipalayam, Noyyal, Karur - 639117.</span>
                     </li>
                     <li>
                       <FaPhone />
-                      <span>+1 (123) 456-7890</span>
+                      <span>+91 9443949773</span>
                     </li>
                     <li>
                       <FaEnvelope />
-                      <span>info@visaservices.com</span>
+                      <span>ramesh.nr999@gmail.com</span>
                     </li>
                   </ul>
                 </div>

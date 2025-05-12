@@ -6,7 +6,7 @@ import './index.css'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter basename="/kiskinda">
+    <BrowserRouter basename="/kiskinda1">
       <ScrollToTop/>
       <App />
     </BrowserRouter>
