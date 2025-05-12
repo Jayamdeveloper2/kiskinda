@@ -71,6 +71,14 @@ const countries = [
       description: 'Modern, global, quality Asian top universities.',
     },
   ];
+
+  // Handle manual scroll for "Details" button and country name clicks
+  const handleDetailsClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   
   
 const StudyDestination = () => {

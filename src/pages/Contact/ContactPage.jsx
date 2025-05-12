@@ -30,6 +30,9 @@ const countries = [
   { value: "France", label: "France" },
   { value: "Ireland", label: "Ireland" },
   { value: "Singapore", label: "Singapore" },
+  { value: "Asia", label: "Asia" },
+  { value: "Europe", label: "Europe" },
+  { value: "Other Countries", label: "Other Countries" },
 ];
 
 const ContactPage = () => {

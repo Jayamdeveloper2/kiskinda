@@ -100,7 +100,7 @@ const Header = () => {
 
               <li className="mega-menu-parent">
                 <Link
-                  to="#"
+                  to="/"
                   onMouseEnter={() => handleMenuEnter("study")}
                   onMouseLeave={handleMenuLeave}
                 >
@@ -207,7 +207,7 @@ const Header = () => {
 
               <li className="mega-menu-parent">
                 <Link
-                  to="/kiskinda/destinations"
+                  to="/destinations"
                   onMouseEnter={() => handleMenuEnter("destinations")}
                   onMouseLeave={handleMenuLeave}
                 >
@@ -261,8 +261,8 @@ const Header = () => {
           </nav>
 
           <div className="header-cta d-flex gap-4">
-            <Link to="/signup" className="cta-button d-none d-md-block">
-            Sign Up
+            <Link to="/" className="cta-button d-none d-md-block">
+            Create Profile
             </Link>
             <button className="mobile-menu-toggle d-lg-none" onClick={toggleMobileMenu}>
               <span className="hamburger-icon">☰</span>

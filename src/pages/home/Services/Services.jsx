@@ -10,6 +10,7 @@ import {
     FaFileSignature
 } from "react-icons/fa";
 import "./Services.css";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     const ourServices = [
@@ -78,9 +79,9 @@ const Services = () => {
                             </div>
                         ))}
                     </div>
-                    {/* <div className="hero-buttons mt-5 d-flex justify-content-center">
-                        <a href="" className="theme-btn1">Discover More</a>
-                    </div> */}
+                    <div className="hero-buttons mt-5 d-flex justify-content-center">
+                        <Link to="/signup" className="theme-btn1">Discover More</Link>
+                    </div>
                 </div>
             </div>
         </section>

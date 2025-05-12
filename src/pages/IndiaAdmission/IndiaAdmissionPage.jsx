@@ -48,7 +48,7 @@ const IndiaAdmissionPage = () => {
                     <Link to="/find-course" className="theme-btn1 ">
                       Find a Course <i className="fas fa-circle-arrow-right"></i>
                     </Link>
-                    <Link to="/signup" className="theme-btn2">
+                    <Link to="/" className="theme-btn2">
                       Sign up <i className="fas fa-circle-arrow-right"></i>
                     </Link>
                   </div>

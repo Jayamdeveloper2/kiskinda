@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <WhyChooseUs/>
+      {/* <WhyChooseUs/> */}
       
       <About />
 

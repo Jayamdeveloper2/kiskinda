@@ -44,7 +44,7 @@ const Hero = () => {
     { 
       value: 0, 
       target: 1500, 
-      text: "Universities",
+      text: "Universities Options",
       icon: <FaUniversity className="stat-icon" />,
       color: "#3461E2"
     },
@@ -56,11 +56,11 @@ const Hero = () => {
       color: "#3461E2"
     },
     { 
-      value: "All Programs",  
-      text: "Covered",
+        value: 0, 
+      target: 150000,       
+      text: "courses options",
       icon: <FaBook className="stat-icon" />,
       color: "#3461E2",
-      noCounter: true
     }
   ]);
 
@@ -126,7 +126,7 @@ const Hero = () => {
             </p>
             <div className="hero-buttons">
               <Link to="/contact" className="theme-btn1">Explore Programs</Link>
-              <Link to="/signup" className="theme-btn2">Free Consultation</Link>
+              <Link to="/" className="theme-btn2">Create Profile</Link>
             </div>
           </div>
           

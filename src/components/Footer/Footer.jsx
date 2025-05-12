@@ -1,28 +1,50 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import footerBg from '../../assets/study-footer.png'; // Adjust path to your image
+import footerBg from '../../assets/study-footer.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const countries = [
+    'Canada',
+    'United Kingdom (UK)',
+    'United States (USA)',
+    'Australia',
+    'Germany',
+    'New Zealand',
+    'France',
+    'Ireland',
+    'Singapore',
+  ];
+
   return (
     <footer className="footer-area" style={{ backgroundImage: `url(${footerBg})` }}>
-      {/* Decorative top border */}
       <div className="footer-top-border"></div>
-      
+
       <div className="footer-overlay">
         <div className="footer-top">
           <div className="container">
             <div className="row">
-              {/* About Us Column */}
+
+              {/* Countries Served */}
               <div className="col-lg-4 col-md-6">
                 <div className="footer-widget">
-                  <h3 className="footer-title">About Us</h3>
-                  <p className="footer-about">
-                    We provide expert visa and immigration services worldwide, helping individuals and families achieve their dreams of living, working, or studying abroad.
-                  </p>
+                  <h3 className="footer-title">Countries Served</h3>
+                  <ul className="footer-links">
+                    {countries.map((country) => (
+                      <li key={country}>{country}</li>
+                    ))}
+                  </ul>
                   <div className="footer-social">
                     <a href="#"><FaFacebook /></a>
                     <a href="#"><FaTwitter /></a>
@@ -32,37 +54,37 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Quick Links Column */}
+              {/* Quick Links */}
               <div className="col-lg-2 col-md-6">
                 <div className="footer-widget">
                   <h3 className="footer-title">Quick Links</h3>
                   <ul className="footer-links">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    <li><Link to="/countries">Countries</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
+                    <li><Link to="/">Study Abroad</Link></li>
+                    <li><Link to="/destinations">Destinations</Link></li>
+                    <li><Link to="/india-admission">India Admission</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                   </ul>
                 </div>
               </div>
 
-              {/* Services Column */}
+              {/* Comprehensive Services */}
               <div className="col-lg-3 col-md-6">
                 <div className="footer-widget">
-                  <h3 className="footer-title">Our Services</h3>
+                  <h3 className="footer-title">Comprehensive Services</h3>
                   <ul className="footer-links">
-                    <li><Link to="/services/study-visa">Study Visa</Link></li>
-                    <li><Link to="/services/work-visa">Work Visa</Link></li>
-                    <li><Link to="/services/tourist-visa">Tourist Visa</Link></li>
-                    <li><Link to="/services/pr-visa">Permanent Residency</Link></li>
-                    <li><Link to="/services/business-visa">Business Immigration</Link></li>
-                    <li><Link to="/services/documentation">Documentation</Link></li>
+                    <li>Profile Evaluation</li>
+                    <li>Course Finder</li>
+                    <li>IELTS Preparation</li>
+                    <li>SOP Writing Tools</li>
+                    <li>Application Submission</li>
+                    <li>Visa Support</li>
+                    <li>Accommodation and Travel Preparation</li>
                   </ul>
                 </div>
               </div>
 
-              {/* Contact Info Column */}
+              {/* Contact Info */}
               <div className="col-lg-3 col-md-6">
                 <div className="footer-widget">
                   <h3 className="footer-title">Contact Info</h3>
@@ -82,6 +104,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -95,8 +118,8 @@ const Footer = () => {
                 </p>
               </div>
               <div className="col-md-6">
-               <p className="company-name">
-                   <a href="">Developed By Jayam web Solutions</a>
+                <p className="company-name">
+                  <a href="">Developed By Jayam web Solutions</a>
                 </p>
               </div>
             </div>
