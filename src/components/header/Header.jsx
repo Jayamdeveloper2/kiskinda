@@ -261,8 +261,8 @@ const Header = () => {
           </nav>
 
           <div className="header-cta d-flex gap-4">
-            <Link to="/contact" className="cta-button d-none d-md-block" onClick={handleLinkClick}>
-              Free Consultation
+            <Link to="/signup" className="cta-button d-none d-md-block">
+            Sign Up
             </Link>
             <button className="mobile-menu-toggle d-lg-none" onClick={toggleMobileMenu}>
               <span className="hamburger-icon">☰</span>

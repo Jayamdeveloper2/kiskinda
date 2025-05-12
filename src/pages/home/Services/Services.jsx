@@ -78,9 +78,9 @@ const Services = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="hero-buttons mt-5 d-flex justify-content-center">
+                    {/* <div className="hero-buttons mt-5 d-flex justify-content-center">
                         <a href="" className="theme-btn1">Discover More</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

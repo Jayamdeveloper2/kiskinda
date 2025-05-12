@@ -76,8 +76,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 60px;
+    width: 70px;
+    height: 40px;
     background-color: rgba(52, 97, 226, 0.1);
     border-radius: 50%;
 }
@@ -91,7 +91,7 @@
 
 /* Text Styles */
 .service-card h4 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--secondary-color);
     margin: 0;

@@ -12,11 +12,13 @@ import IndiaAdmission from '../pages/home/IndiaAdmission/IndiaAdmission'
 
 import Ctabg from '../assets/cta-1.jpg';
 import Bgdesign from '../assets/about-02.png';
+import WhyChooseUs from './WhyChooseUs'
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <WhyChooseUs/>
       
       <About />
 

@@ -6,6 +6,7 @@ import Hero2 from '../../../assets/usa.webp';
 import Hero3 from '../../../assets/hero-image8.jpg';
 import Hero4 from '../../../assets/hero-image10.webp';
 import { FaUniversity, FaGlobeAmericas, FaBook } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -124,8 +125,8 @@ const Hero = () => {
               {slides[currentIndex].description}
             </p>
             <div className="hero-buttons">
-              <a href="#" className="theme-btn1">Explore Programs</a>
-              <a href="#" className="theme-btn2">Free Consultation</a>
+              <Link to="/contact" className="theme-btn1">Explore Programs</Link>
+              <Link to="/signup" className="theme-btn2">Free Consultation</Link>
             </div>
           </div>
           

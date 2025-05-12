@@ -14,29 +14,34 @@ import About from './layouts/About';
 import Universities from './pages/About/Universities/Universities';
 import QuoteSection from './pages/home/QuoteSection/QuoteSection';
 import AboutProgram from './pages/About/AboutProgram/AboutProgram';
+import WhyChooseUs from './layouts/WhyChooseUs';
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
 function App() {
   return (
-    <Routes>
-      {/* Routes with TopBar, Header, Footer */}
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/universities" element={<Universities />} />
-        <Route path="/quote" element={<QuoteSection />} />
-        <Route path="/programs" element={<AboutProgram />} />
-        <Route path="/destinations" element={<Destination />} />
-            {/* <Route path="/kiskinda/destinations" element={<Destination />} /> */}
+    <>
+      <Routes>
+        {/* Routes with TopBar, Header, Footer */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/whychooseus" element={<WhyChooseUs />} />
+          <Route path="/universities" element={<Universities />} />
+          <Route path="/quote" element={<QuoteSection />} />
+          <Route path="/programs" element={<AboutProgram />} />
+          <Route path="/destinations" element={<Destination />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/india-admission" element={<IndiaAdmission />} />
+        </Route>
 
-        {/* <Route path="/destinations/:country" element={<Destination />} /> */}
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/india-admission" element={<IndiaAdmission />} />
-      </Route>
+        {/* Route without layout */}
+        <Route path="/find-course" element={<FindCourse />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
 
-      {/* Route without layout */}
-      <Route path="/find-course" element={<FindCourse />} />
-      <Route path="/signup" element={<Signup />} />
-    </Routes>
+      {/* ✅ WhatsApp Button correctly placed */}
+      <WhatsAppButton />
+    </>
   );
 }
 
