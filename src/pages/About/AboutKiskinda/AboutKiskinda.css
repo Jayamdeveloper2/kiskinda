@@ -1,0 +1,30 @@
+.about-kiskinda .site-title-tagline{
+    color: var(--primary-color);
+}
+
+.about-kiskinda .site-title{
+    font-size: 38px;
+}
+
+.mission-statement {
+  background-color: #f5f9ff;
+  padding: 30px;
+  border-left: 3px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.mission-statement:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.mission-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.mission-text {
+  line-height: 1.6;
+  margin-bottom: 0;
+}

@@ -1,0 +1,151 @@
+.about-area {
+    padding: 80px 0;
+    background-color: var(--white);
+  }
+  
+  .about-left .about-img {
+    position: relative;
+  }
+  
+  .about-img .img-1,
+  .about-img .img-2 {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .about-img .img-1 {
+    margin-top: -8%;
+    border-radius: 70px 70px 0px 70px;
+}
+
+.about-img .img-2 {
+    margin-bottom: -8%;
+    border-radius: 0px 70px 70px 70px;
+}
+  
+  .about-img .shape {
+    position: absolute;
+    top: 73%;
+    left: 0;
+    width: 250px;
+    animation: float 6s ease-in-out infinite;
+}
+  
+.about-experience {
+    background: var(--primary-color);
+    padding: 14px 25px;
+    border-radius: 100px 100px 100px 0;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-experience::before {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 2px dashed #fff;
+    border-radius: 100px 100px 100px 0;
+}
+  .about-experience h5 {
+    font-size: 32px;
+    color: var(--white);
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .about-experience span {
+    font-size: 24px;
+    color: var(--white);
+  }
+  
+  .about-experience p {
+    font-size: 14px;
+    margin: 0;
+    color: var(--white);
+  }
+  
+  .about-right .site-title-tagline {
+    display: inline-block;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .about-right .site-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--secondary-color);
+  }
+  
+  .about-right .site-title span {
+    color: var(--primary-color);
+  }
+  
+  .about-text {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+
+  .about-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .about-item .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .about-item h6 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--secondary-color);
+  }
+  
+  .about-item p {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+ 
+  .feature-icon {
+    font-size: 32px;
+    color: var(--primary-color);
+  }
+
+  .about-content {
+    background:rgba(0, 152, 255, .1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @media (max-width:500px){
+    .about-img .shape{
+      top: 63%;
+      width: 170px;
+    }
+  }
+  

@@ -1,0 +1,47 @@
+.cta-area {
+    position: relative;
+}
+
+.cta-wrap {
+    position: relative;
+    background: var(--primary-color);
+    border-radius: 50px 50px 50px 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-img img {
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.cta-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-content h1 {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.cta-content p {
+    color: var(--white);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cta-wrap .shape {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 40%;
+    opacity: .2;
+    z-index: -1;
+}
+
+.theme-btn3{
+    background-color: #ffa704;
+}
+
+.theme-btn3:hover{
+    background-color: #00408e;
+}

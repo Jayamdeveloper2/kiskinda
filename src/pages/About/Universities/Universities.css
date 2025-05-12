@@ -1,0 +1,27 @@
+.universities-section{
+  background: #fff;
+}
+
+.university-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.university-list li {
+  display: flex;
+  align-items: center;
+}
+
+.university-list img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.cta-box {
+  margin-top: 30px;
+  text-align: center;
+  padding: 30px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+}
